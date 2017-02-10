@@ -92,7 +92,7 @@
       <plugin>
         <groupId>fr.inria.gforge.spoon</groupId>
         <artifactId>spoon-maven-plugin</artifactId>
-        <version>2.2</version>
+        <version>2.4.1</version>
         <executions>
           <execution>
             <phase>generate-sources</phase>
@@ -103,7 +103,7 @@
         </executions>
         <configuration>
           <processors>
-            <processor>fr.inria.gforge.spoon.processors.CatchProcessor</processor>
+            <processor>CatchProcessor</processor>
           </processors>
         </configuration>
         <!-- To be sure that you use the latest version of Spoon, specify it as dependency. -->
@@ -112,6 +112,13 @@
             <groupId>fr.inria.gforge.spoon</groupId>
             <artifactId>spoon-core</artifactId>
             <version>5.5.0</version>
+          </dependency>
+          <dependency>
+            <groupId>devops</groupId>
+            <artifactId>mutator</artifactId>
+            <scope>system</scope>
+            <version>1.0</version>
+            <systemPath>${basedir}\src\main\resources\devops-1.0-SNAPSHOT.jar</systemPath>
           </dependency>
         </dependencies>
       </plugin>
