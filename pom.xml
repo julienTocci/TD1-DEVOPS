@@ -118,7 +118,7 @@
             <artifactId>mutator</artifactId>
             <scope>system</scope>
             <version>1.0</version>
-            <systemPath>${basedir}\src\main\resources\devops-1.0-SNAPSHOT.jar</systemPath>
+            <systemPath>${basedir}/src/main/resources/devops-1.0-SNAPSHOT.jar</systemPath>
           </dependency>
         </dependencies>
       </plugin>
