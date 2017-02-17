@@ -103,6 +103,7 @@
           </execution>
         </executions>
         <configuration>
+          <outFolder>target/generated-sources/${processor}</outFolder>
           <processors>
             <processor>${processor}</processor>
           </processors>
